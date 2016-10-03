@@ -1,0 +1,116 @@
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\WebApplication2.dll.config
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\WebApplication2.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\WebApplication2.pdb
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Antlr3.Runtime.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\EntityFramework.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\EntityFramework.SqlServer.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Google.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Web.Infrastructure.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Newtonsoft.Json.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Owin.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.Helpers.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.Mvc.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.Optimization.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.Razor.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.WebPages.Deployment.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.WebPages.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.WebPages.Razor.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\WebGrease.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.Helpers.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.Mvc.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.Optimization.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.Razor.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.WebPages.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.WebPages.Deployment.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\System.Web.WebPages.Razor.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Newtonsoft.Json.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Antlr3.Runtime.pdb
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\EntityFramework.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\EntityFramework.SqlServer.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Google.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
+c:\users\admin\documents\visual studio 2013\Projects\WebApplication2\WebApplication2\bin\Duke.Owin.VkontakteMiddleware.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\WebApplication2.dll.config
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\WebApplication2.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\WebApplication2.pdb
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Antlr3.Runtime.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Duke.Owin.VkontakteMiddleware.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\EntityFramework.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\EntityFramework.SqlServer.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.AspNet.Identity.Core.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Cookies.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Facebook.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Google.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Twitter.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Web.Infrastructure.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Newtonsoft.Json.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Owin.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.Helpers.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.Mvc.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.Optimization.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.Razor.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.WebPages.Deployment.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.WebPages.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.WebPages.Razor.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\WebGrease.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.OAuth.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\EntityFramework.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\EntityFramework.SqlServer.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Facebook.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Google.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Twitter.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Newtonsoft.Json.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.Helpers.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.Mvc.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.Optimization.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.Razor.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.WebPages.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.WebPages.Deployment.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.WebPages.Razor.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Antlr3.Runtime.pdb
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.AspNet.Identity.Core.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Cookies.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.OAuth.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csprojResolveAssemblyReference.cache
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Migrations.InitialCreate.resources
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.GenerateResource.Cache
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Migrations.qwe.resources
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Migrations.updatesitefields.resources

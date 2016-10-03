@@ -1,0 +1,33 @@
+﻿@model IEnumerable<WebApplication2.Models.Site>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Книжный магазин</title>
+</head>
+<body>
+    <div>
+        <h3>List your sites</h3>
+        <table>
+            <tr>
+                <td><p>Titel</p></td>
+                <td><p>Description</p></td>
+                <td><p>CreationTime</p></td>
+                <td></td>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><p>@item.Title</p></td>
+                    <td><p>@item.Description</p></td>
+                    <td><p>@item.CreationTime</p></td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+

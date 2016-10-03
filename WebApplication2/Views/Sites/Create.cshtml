@@ -1,0 +1,95 @@
+﻿@model WebApplication2.Models.Site
+@using System.Web.Script.Serialization;
+<script src="~/Scripts/siteconstr.js"></script>
+<link href="~/Content/createsite1.css" rel="stylesheet">
+@{
+    ViewBag.Title = "Create";
+}
+
+
+
+
+    <div class="form-horizontal">
+        <h4>Site</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        <tr>
+            <td><p>Enter the name of the site :</p></td>
+        </tr>
+        <tr>
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Title)
+                    @Html.ValidationMessageFor(model => model.Title)
+                </div>
+            </div>
+        </tr>
+
+        <tr>
+            <td><p>Description :</p></td>
+        </tr>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Description)
+                @Html.ValidationMessageFor(model => model.Description)
+            </div>
+        </div>
+
+        <table>
+            <tr><td><p>Choose a theme site :</p></td></tr>
+
+            <td>
+               <div class="thumb">
+                     <img class="theme-img selected" align="left" id="1" alt="Тема" src="http://res.cloudinary.com/dgy6x5krf/image/upload/v1469968200/QyCaGKpK8Ag_ftpqqx.jpg"  style="width: 350px; height: 320px; "  />
+                     <img class="theme-img" align="left" id="2" alt="Тема" src="http://res.cloudinary.com/dgy6x5krf/image/upload/v1469968200/gtaLFel2tl4_j7nugp.jpg"  style="width: 350px; height: 320px; " />
+                </div>
+            </td>
+
+        <tr><td><p>Choose a template :</p></td></tr>
+
+                <td>
+                    <div class="thumbMenu">
+                        <img class="selected" align="left" data-id="1" alt="Меню" src="http://res.cloudinary.com/dgy6x5krf/image/upload/v1469969081/oiyngrnh1utelwzvmihv.jpg" style="width: 350px; height: 320px; " />
+                        <img align="left" data-id="2" alt="Меню" src="http://res.cloudinary.com/dgy6x5krf/image/upload/v1469969833/%D0%91%D0%B5%D0%B7%D1%8B%D0%BC%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9_f1pxjm.jpg" style="width: 350px; height: 320px; " />
+                        <img align="left" data-id="3" alt="Меню" src="http://res.cloudinary.com/dgy6x5krf/image/upload/v1469969873/%D0%91%D0%B5%D0%B7%D1%8B%D0%BC%D1%8F%D0%BD%D0%BD%D1%8B%D0%B91_pi3ikd.jpg" style="width: 350px; height: 320px; " />
+                    </div>
+                </td>
+            </table>
+                <div class="form-group" style='position: relative; text-align: left; margin: 0;'>
+                    <div class="col-md-offset-2 col-md-10" style='position: relative; text-align: left; margin: 0;'>
+                        <input type="submit" value="Create" id="save" class="btn btn-default" />
+                    </div>
+                </div>
+        </div>
+
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+
+<script>
+    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#image').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+@{
+    JavaScriptSerializer jss = new JavaScriptSerializer();
+    string source = jss.Serialize(ViewBag.Tags);
+}
+
+
+<script>
+    $("#uploadFile").change(function () {
+        readURL(this);
+    });
+</script>

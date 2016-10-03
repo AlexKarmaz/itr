@@ -1,0 +1,28 @@
+﻿
+    .thumb{
+        display: inline-block;
+    }
+    .thumb img {
+        padding: 10px;
+        background: #666;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+        .thumb img.selected {
+            border: 2px solid #55c5e9;
+        }
+
+        .thumbMune{
+        display: inline-block;
+    }
+    .thumbMenu img {
+        padding: 10px;
+        background: #666;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+        .thumbMenu img.selected {
+            border: 2px solid #55c5e9;
+        }
