@@ -13,6 +13,7 @@ namespace WebApplication2.Models
         public string Description { get; set; }
         public int TemplateId { get; set; }
         public int MenuId { get; set; }
+        public virtual Menu Menu { get; set; }
         // public bool Iscomplited { get; set; }
         //  public string MenuType { get; set; }
         // public string Url { get; set; }

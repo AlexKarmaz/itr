@@ -114,3 +114,11 @@ F:\сайт с авторизацией и регистрацией\WebApplicati
 F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.GenerateResource.Cache
 F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Migrations.qwe.resources
 F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Migrations.updatesitefields.resources
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Net.Http.Formatting.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.Http.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.Http.WebHost.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Net.Http.Formatting.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.Http.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\System.Web.Http.WebHost.xml
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Migrations.test.resources
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Migrations.updatemenustructure.resources
