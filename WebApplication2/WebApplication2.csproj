@@ -206,6 +206,14 @@
     <Compile Include="Migrations\201610041035395_update menu structure.Designer.cs">
       <DependentUpon>201610041035395_update menu structure.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610060606435_update menu-2.cs" />
+    <Compile Include="Migrations\201610060606435_update menu-2.Designer.cs">
+      <DependentUpon>201610060606435_update menu-2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610061402576_page update .cs" />
+    <Compile Include="Migrations\201610061402576_page update .Designer.cs">
+      <DependentUpon>201610061402576_page update .cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -218,27 +226,174 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Card.css" />
+    <Content Include="Content\Comment.css" />
+    <Content Include="Content\daynght.css" />
+    <Content Include="Content\DropDownMenu.css" />
+    <Content Include="Content\Images\backgroundcell.jpg" />
+    <Content Include="Content\Images\bg-dark.jpg" />
+    <Content Include="Content\Images\bg-lights.jpg" />
+    <Content Include="Content\Images\bg.jpg" />
+    <Content Include="Content\Images\cloud1.png" />
+    <Content Include="Content\Images\cloud2.png" />
+    <Content Include="Content\Images\cloud3.png" />
+    <Content Include="Content\Images\cloud4.png" />
+    <Content Include="Content\Images\cloud5.png" />
+    <Content Include="Content\Images\cloud6.png" />
+    <Content Include="Content\Images\cloud7.png" />
+    <Content Include="Content\Images\en.png" />
+    <Content Include="Content\Images\medal.png" />
+    <Content Include="Content\Images\pause.png" />
+    <Content Include="Content\Images\play.png" />
+    <Content Include="Content\Images\ru.png" />
+    <Content Include="Content\Images\star.png" />
+    <Content Include="Content\Images\template1.jpg" />
+    <Content Include="Content\Images\template2.jpg" />
+    <Content Include="Content\Images\template3.jpg" />
+    <Content Include="Content\Images\template4.jpg" />
+    <Content Include="Content\Images\template5.jpg" />
+    <Content Include="Content\Images\template6.jpg" />
+    <Content Include="Content\Images\template7.jpg" />
+    <Content Include="Content\image_preview.css" />
+    <Content Include="Content\jquery.tag-editor.css" />
     <Content Include="Content\Layout.css" />
+    <Content Include="Content\medals.css" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Content\PageLayout.css" />
+    <Content Include="Content\PageLayout2.css" />
+    <Content Include="Content\PageLayout3.css" />
+    <Content Include="Content\rating.css" />
     <Content Include="Content\style_gray.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\createsite1.css" />
     <Content Include="Content\style_white.css" />
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\.gif" />
+    <Content Include="img\background.jpg" />
+    <Content Include="img\background2.jpg" />
+    <Content Include="img\backgroundcell.jpg" />
+    <Content Include="img\bg-dark.jpg" />
+    <Content Include="img\bg-lights.jpg" />
+    <Content Include="img\bg.jpg" />
+    <Content Include="img\cloud1.png" />
+    <Content Include="img\cloud2.png" />
+    <Content Include="img\cloud3.png" />
+    <Content Include="img\cloud4.png" />
+    <Content Include="img\cloud5.png" />
+    <Content Include="img\cloud6.png" />
+    <Content Include="img\cloud7.png" />
+    <Content Include="img\en.png" />
+    <Content Include="img\image.png" />
+    <Content Include="img\img.jpg" />
+    <Content Include="img\img2.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\medal.png" />
+    <Content Include="img\pause.png" />
+    <Content Include="img\play.png" />
+    <Content Include="img\ru.png" />
+    <Content Include="img\stripes.png" />
+    <Content Include="img\team.jpg" />
+    <Content Include="img\template1.jpg" />
+    <Content Include="img\template2.jpg" />
+    <Content Include="img\template3.jpg" />
+    <Content Include="img\template4.jpg" />
+    <Content Include="img\template5.jpg" />
+    <Content Include="img\template6.jpg" />
+    <Content Include="img\template7.jpg" />
+    <Content Include="img\text.png" />
+    <Content Include="img\userIcon.png" />
+    <Content Include="img\video.png" />
+    <Content Include="img\zoom.png" />
+    <Content Include="Scripts\AddComment.js" />
+    <Content Include="Scripts\AddRaitingOnComment.js" />
+    <Content Include="Scripts\ai.0.22.19-build00125.js" />
+    <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="img\.DS_Store" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\ChangePhoto.js" />
+    <Content Include="Scripts\CreateSlideShow.js" />
+    <Content Include="Scripts\dropzone\basic.css" />
+    <Content Include="Scripts\dropzone\basic.min.css" />
+    <Content Include="Scripts\dropzone\dropzone-amd-module.js" />
+    <Content Include="Scripts\dropzone\dropzone-amd-module.min.js" />
+    <Content Include="Scripts\dropzone\dropzone.css" />
+    <Content Include="Scripts\dropzone\dropzone.js" />
+    <Content Include="Scripts\dropzone\dropzone.min.css" />
+    <Content Include="Scripts\dropzone\dropzone.min.js" />
+    <Content Include="Scripts\indexxxx.js" />
+    <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.0.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-3.1.0.min.map" />
+    <Content Include="Scripts\jQuery-tagEditor-master.zip" />
+    <Content Include="Scripts\jquery-3.1.0.slim.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.1.0.min.js" />
+    <Content Include="Scripts\jquery-3.1.0.slim.js" />
+    <Content Include="Scripts\jquery-3.1.0.slim.min.js" />
+    <Content Include="Scripts\jquery-ui-1.12.0.js" />
+    <Content Include="Scripts\jquery-ui-1.12.0.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.1.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.1.min.js" />
+    <Content Include="Scripts\jquery.tag-editor.js" />
+    <Content Include="Scripts\jquery.tag-editor.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\LoadTemplate.js" />
+    <Content Include="Scripts\locationContent.js" />
+    <Content Include="Scripts\MenuDroppable.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\prefixfree.min.js" />
+    <Content Include="Scripts\RaitingOnCard.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\siteconstr.js" />
@@ -271,6 +426,14 @@
     <Content Include="Views\Sites\CreateMenu.cshtml" />
     <Content Include="Views\Sites\LoadPage.cshtml" />
     <Content Include="Views\Sites\CreatePage.cshtml" />
+    <Content Include="Views\Shared\template\MenuEditor.cshtml" />
+    <Content Include="Views\Shared\template\template1.cshtml" />
+    <Content Include="Views\Shared\template\template2.cshtml" />
+    <Content Include="Views\Shared\template\template3.cshtml" />
+    <Content Include="Views\Shared\template\template4.cshtml" />
+    <Content Include="Views\Shared\template\template5.cshtml" />
+    <Content Include="Views\Shared\template\template6.cshtml" />
+    <Content Include="Views\Shared\template\template7.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -298,6 +461,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610041035395_update menu structure.resx">
       <DependentUpon>201610041035395_update menu structure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610060606435_update menu-2.resx">
+      <DependentUpon>201610060606435_update menu-2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610061402576_page update .resx">
+      <DependentUpon>201610061402576_page update .cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -70,7 +70,7 @@ namespace WebApplication2.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="SiteId,Title,Description,CreationTime,UserId")] Site site)
+        public ActionResult Edit(Site site)
         {
             if (ModelState.IsValid)
             {
@@ -102,7 +102,9 @@ namespace WebApplication2.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Site site = db.Sites.Find(id);
-            db.Sites.Remove(site);
+            site.Menu = null;
+            db.Pages.RemoveRange(site.Pages);
+            db.Sites.Remove(site);            
             db.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -167,6 +169,41 @@ namespace WebApplication2.Controllers
                 }
             }
             throw new HttpException(HttpStatusCode.InternalServerError.ToString());
+        }
+
+        public ActionResult PageView(string userName, int id, int? pageId)
+        {
+            Page page;
+            using (MyDbContext db = new MyDbContext())
+            {
+                page = db.Sites
+                    .Include(s => s.Pages)
+                    .SingleOrDefault(p => p.SiteId == id).Pages.FirstOrDefault(p => p.PageId == pageId);
+            }
+            return View("PageView", page);
+        }
+
+        [HttpPost]
+        public void SavePage(Page savePage)
+        {
+            using (MyDbContext db = new MyDbContext())
+            {
+                db.Pages.SingleOrDefault(p => p.PageId == savePage.PageId).HtmlCode = savePage.HtmlCode;
+                db.SaveChanges();
+            }
+        }
+
+
+        [HttpPost]
+        public ActionResult LoadTemplate(string id)
+        {
+            return PartialView("template/" + id);
+        }
+
+        [HttpPost]
+        public ActionResult LoadMenuEditor()
+        {
+            return PartialView("template/MenuEditor");
         }
 
         protected override void Dispose(bool disposing)
