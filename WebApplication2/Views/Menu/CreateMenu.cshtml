@@ -129,7 +129,7 @@ $(document).ready(function() {
 
 	    $.ajax({
 	        type: 'POST',
-	        url: "/Sites/SaveMenu",
+	        url: "/Menu/SaveMenu",
 	        dataType: 'text',
 	        data: saveMenu,
 	        contentType: "application/json; charset=utf-8",
@@ -231,7 +231,7 @@ $(document).ready(function() {
                 <section class="grid-wrap">
                     <div class="grid-wrap">
                         <input type="text" style="border: none;" value="@Url.Action("Site", "Sites", new { id = Model.SiteId, pageId = @page.PageId})" />
-                        <iframe src="@Url.Action("PageView", "Sites", new {id = Model.SiteId, pageId = @page.PageId})"> </iframe>
+                        <iframe src="@Url.Action("PageView", "Page", new {id = Model.SiteId, pageId = @page.PageId})"> </iframe>
 
                     </div>
                 </section>

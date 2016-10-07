@@ -108,7 +108,7 @@ function SavePage() {
 
     $.ajax({
         type: 'POST',
-        url: "/Sites/SavePage",
+        url: "/Page/SavePage",
         dataType: 'text',
         data: JSON.stringify(savePage),
         contentType: "application/json; charset=utf-8",

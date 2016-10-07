@@ -182,6 +182,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\PageController.cs" />
     <Compile Include="Controllers\SitesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -423,9 +425,6 @@
     <Content Include="Views\Sites\Details.cshtml" />
     <Content Include="Views\Sites\Edit.cshtml" />
     <Content Include="Views\Sites\Index.cshtml" />
-    <Content Include="Views\Sites\CreateMenu.cshtml" />
-    <Content Include="Views\Sites\LoadPage.cshtml" />
-    <Content Include="Views\Sites\CreatePage.cshtml" />
     <Content Include="Views\Shared\template\MenuEditor.cshtml" />
     <Content Include="Views\Shared\template\template1.cshtml" />
     <Content Include="Views\Shared\template\template2.cshtml" />
@@ -434,8 +433,10 @@
     <Content Include="Views\Shared\template\template5.cshtml" />
     <Content Include="Views\Shared\template\template6.cshtml" />
     <Content Include="Views\Shared\template\template7.cshtml" />
-    <Content Include="Views\Sites\PageView.cshtml" />
     <Content Include="Views\Sites\Site.cshtml" />
+    <Content Include="Views\Menu\CreateMenu.cshtml" />
+    <Content Include="Views\Page\CreatePage.cshtml" />
+    <Content Include="Views\Page\PageView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
