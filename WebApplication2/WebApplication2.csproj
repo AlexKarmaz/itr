@@ -434,6 +434,8 @@
     <Content Include="Views\Shared\template\template5.cshtml" />
     <Content Include="Views\Shared\template\template6.cshtml" />
     <Content Include="Views\Shared\template\template7.cshtml" />
+    <Content Include="Views\Sites\PageView.cshtml" />
+    <Content Include="Views\Sites\Site.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -99,13 +99,10 @@ function LoadScript() {
 };
 
 function SavePage() {
-    let id = window.location.href;
-    let position = id.lastIndexOf("/");
-    id = id.slice(position + 1);
     //let html = $(".no-js").html();
     let html = $("#main-form").html();
     var savePage = {
-        Id: id,
+        PageId: pageId,
         HtmlCode: html
     }
 
@@ -117,15 +114,7 @@ function SavePage() {
         contentType: "application/json; charset=utf-8",
         traditional: true,
         success: function (data) {
-            let urlId = window.location.href;
-            let pos = urlId.lastIndexOf("/");
-            urlId = urlId.slice(0, pos);
-            pos = urlId.lastIndexOf("/");
-            let userName = urlId.slice(0, pos);
-            let userNamePos = userName.lastIndexOf("/");
-            userName = userName.slice(userNamePos + 1);
-            urlId = urlId.slice(pos + 1);
-            window.location.replace("https://localhost:44396/Sites/FillSite/" + userName + "/" + urlId);
+            window.location.replace("https://localhost:44300/Sites/Details/"+siteId);
         }
     });
 };

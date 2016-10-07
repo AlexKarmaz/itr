@@ -1,6 +1,6 @@
 ﻿@model WebApplication2.Models.Page
 @{Layout = null;}
-@{ if ((int)Session["TemplateId"] == 1)
+ @{if (Model.Site.TemplateId == 1)
     { @Styles.Render("~/Content/StyleGray")}
     else
     { @Styles.Render("~/Content/StyleWhight")}
@@ -113,6 +113,8 @@
                 s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
     <script type="text/javascript">
+        var pageId = @Model.PageId;
+            var siteId= @Model.SiteId; 
             $(document).ready(function() {
                 LoadMenuEditor();
             });

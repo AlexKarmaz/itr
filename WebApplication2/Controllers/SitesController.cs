@@ -150,8 +150,7 @@ namespace WebApplication2.Controllers
             }
             if (site == null)
                 throw new HttpException(HttpStatusCode.NotFound.ToString());
-
-                Session.Add("TemplateId", site.TemplateId);
+            
                 return View("CreatePage", site.Pages.SingleOrDefault(p => p.PageId == pageId));          
         }
 
@@ -171,7 +170,7 @@ namespace WebApplication2.Controllers
             throw new HttpException(HttpStatusCode.InternalServerError.ToString());
         }
 
-        public ActionResult PageView(string userName, int id, int? pageId)
+        public ActionResult PageView(int id, int? pageId)
         {
             Page page;
             using (MyDbContext db = new MyDbContext())
@@ -205,6 +204,36 @@ namespace WebApplication2.Controllers
         {
             return PartialView("template/MenuEditor");
         }
+
+        [AllowAnonymous]
+        public ActionResult Site(int id, int? pageId)
+        {
+            Site site;
+            using (MyDbContext db = new MyDbContext())
+            {
+                site = db.Sites
+                    .Include(s => s.Pages)
+                    .Include(s => s.Menu)
+                    .Include(s => s.Menu.Items)
+                    .SingleOrDefault(p => p.SiteId == id);
+            }
+            if (site == null)
+                site = new Site();
+            Page page = pageId != null ? site.Pages.FirstOrDefault(s => s.PageId == pageId) : null;
+            if (page == null)
+                page = site.Pages.Count > 0 ? site.Pages.FirstOrDefault() : new Page();
+
+         //   if(page.Site.Menu == null)
+         //   {
+         //       page.Site.Menu = new Menu();
+         //   }
+
+          //  if (page.Site.Menu.Items == null)
+         //   {
+         //       page.Site.Menu.Items = new List<MenuItem>();
+          //  }
+            return View("Site", page);
+      }
 
         protected override void Dispose(bool disposing)
         {

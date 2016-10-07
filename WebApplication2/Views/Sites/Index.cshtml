@@ -39,6 +39,7 @@
             @Html.DisplayFor(modelItem => item.UserId)
         </td>
         <td>
+            @Html.ActionLink("View", "Site", new { id = item.SiteId }) |
             @Html.ActionLink("Edit", "Edit", new { id=item.SiteId }) |
             @Html.ActionLink("Details", "Details", new { id=item.SiteId }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.SiteId })
