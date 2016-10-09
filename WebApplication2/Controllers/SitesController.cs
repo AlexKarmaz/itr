@@ -17,13 +17,50 @@ namespace WebApplication2.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        
+        [Authorize]
         public ActionResult Index()
         {
             var UserId = User.Identity.GetUserId();
             return View(db.Sites.Where(s=>s.UserId==UserId).ToList());
         }
-                
+
+        public ActionResult AllSitesIndex()
+        {
+            return View(db.Sites.ToList());
+        }
+
+        [AllowAnonymous]
+        public ActionResult AllSites(int id, int? pageId)
+        {
+            Site site;
+            using (MyDbContext db = new MyDbContext())
+            {
+                site = db.Sites
+                    .Include(s => s.Pages)
+                    .Include(s => s.Menu)
+                    .Include(s => s.Menu.Items)
+                    .SingleOrDefault(p => p.SiteId == id);
+            }
+            if (site == null)
+                site = new Site();
+            Page page = pageId != null ? site.Pages.FirstOrDefault(s => s.PageId == pageId) : null;
+            if (page == null)
+                page = site.Pages.Count > 0 ? site.Pages.FirstOrDefault() : new Page();
+            page.Site = site;
+            if (page.Site.Menu == null)
+            {
+                page.Site.Menu = new Menu();
+            }
+
+            if (page.Site.Menu.Items == null)
+            {
+                page.Site.Menu.Items = new List<MenuItem>();
+            }
+            var UserId = User.Identity.GetUserId();
+            ViewBag.IsAutor = site.UserId == UserId && UserId != null;
+            return View("AllSites", page);
+        }
+
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -37,13 +74,15 @@ namespace WebApplication2.Controllers
             }
             return View(site);
         }
-        
+
+        [Authorize]
         public ActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
+        [Authorize]
         public ActionResult Create(Site site)
         {
             site.CreationTime = DateTime.Now;
@@ -97,7 +136,6 @@ namespace WebApplication2.Controllers
             }
             return View(site);
         }
-
        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

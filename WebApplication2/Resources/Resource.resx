@@ -228,4 +228,7 @@
   <data name="UnsuccessLogin" xml:space="preserve">
     <value>Не удалось войти через социальные сети </value>
   </data>
+  <data name="AllSites" xml:space="preserve">
+    <value>Все сайты</value>
+  </data>
 </root>

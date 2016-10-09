@@ -348,6 +348,8 @@
     <Content Include="img\pause.png" />
     <Content Include="img\play.png" />
     <Content Include="img\ru.png" />
+    <Content Include="img\site-background.jpg" />
+    <Content Include="img\site-background2.jpg" />
     <Content Include="img\stripes.png" />
     <Content Include="img\team.jpg" />
     <Content Include="img\template1.jpg" />
@@ -448,6 +450,8 @@
     <Content Include="Views\Menu\CreateMenu.cshtml" />
     <Content Include="Views\Page\CreatePage.cshtml" />
     <Content Include="Views\Page\PageView.cshtml" />
+    <Content Include="Views\Sites\AllSitesIndex.cshtml" />
+    <Content Include="Views\Sites\AllSites.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -492,6 +496,7 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
       <CustomToolNamespace>Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

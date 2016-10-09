@@ -102,7 +102,7 @@ function SavePage() {
     //let html = $(".no-js").html();
     let html = $("#main-form").html();
     var savePage = {
-        PageId: pageId,
+        PageId: window.location.href.slice(-2),
         HtmlCode: html
     }
 
@@ -114,7 +114,7 @@ function SavePage() {
         contentType: "application/json; charset=utf-8",
         traditional: true,
         success: function (data) {
-            window.location.replace("https://localhost:44300/Sites/Details/"+siteId);
+            window.location.replace("https://localhost:44300/Sites/Details/" + window.location.href.slice(-12, -10));
         }
     });
 };

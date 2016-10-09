@@ -228,4 +228,7 @@
   <data name="UnsuccessLogin" xml:space="preserve">
     <value>Unsuccessful login with service:</value>
   </data>
+  <data name="AllSites" xml:space="preserve">
+    <value>All sites</value>
+  </data>
 </root>

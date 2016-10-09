@@ -70,6 +70,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Все сайты.
+        /// </summary>
+        public static string AllSites {
+            get {
+                return ResourceManager.GetString("AllSites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Вернуться к списку.
         /// </summary>
         public static string BackToList {

@@ -16,7 +16,7 @@ namespace WebApplication2.Controllers
     public class PageController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-
+        [Authorize]
         public ActionResult CreatePage(string userName, int id, int? pageId)
         {
             if (pageId == null)
