@@ -9,6 +9,7 @@ using WebApplication2.Models;
 using Microsoft.Ajax.Utilities;
 using Microsoft.AspNet.Identity;
 using WebApplication2.Filters;
+
 namespace WebApplication2.Controllers
 {
     [Culture]
@@ -19,7 +20,8 @@ namespace WebApplication2.Controllers
         
         public ActionResult Index()
         {
-            return View(db.Sites.ToList());
+            var UserId = User.Identity.GetUserId();
+            return View(db.Sites.Where(s=>s.UserId==UserId).ToList());
         }
                 
         public ActionResult Details(int? id)
@@ -138,16 +140,18 @@ namespace WebApplication2.Controllers
             Page page = pageId != null ? site.Pages.FirstOrDefault(s => s.PageId == pageId) : null;
             if (page == null)
                 page = site.Pages.Count > 0 ? site.Pages.FirstOrDefault() : new Page();
+            page.Site = site; 
+            if(page.Site.Menu == null)
+            {
+                page.Site.Menu = new Menu();
+            }
 
-         //   if(page.Site.Menu == null)
-         //   {
-         //       page.Site.Menu = new Menu();
-         //   }
-
-          //  if (page.Site.Menu.Items == null)
-         //   {
-         //       page.Site.Menu.Items = new List<MenuItem>();
-          //  }
+            if (page.Site.Menu.Items == null)
+            {
+                page.Site.Menu.Items = new List<MenuItem>();
+            }
+            var UserId = User.Identity.GetUserId();
+            ViewBag.IsAutor = site.UserId == UserId && UserId != null;
             return View("Site", page);
       }
 

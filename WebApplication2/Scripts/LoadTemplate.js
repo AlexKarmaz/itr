@@ -95,7 +95,7 @@ function LoadScript() {
                 }
             }
         });
-    }, 20);
+    }, 100);
 };
 
 function SavePage() {

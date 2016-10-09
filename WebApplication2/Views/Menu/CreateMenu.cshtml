@@ -233,7 +233,7 @@ $(document).ready(function() {
                         <input type="text" style="border: none;" value="@Url.Action("Site", "Sites", new { id = Model.SiteId, pageId = @page.PageId})" />
                         <iframe src="@Url.Action("PageView", "Page", new {id = Model.SiteId, pageId = @page.PageId})"> </iframe>
                     </div>
-                    <a href="@Url.Action("Site", "Page", new {id = page.PageId })" class="btn btn-primary">@Resources.Resource.Delete</a>
+                    <a href="@Url.Action("Delete", "Page", new {id = page.PageId })" class="btn btn-primary">@Resources.Resource.Delete</a>
                 </section>
 
             }

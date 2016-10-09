@@ -81,7 +81,10 @@ namespace WebApplication2.Controllers
             {
                 return HttpNotFound();
             }
-            return null;
+            var siteid = page.SiteId;
+            db.Pages.Remove(page);
+            db.SaveChanges();
+            return RedirectToAction("CreateMenu","Menu",new {id = siteid });
         }
 
         [HttpPost, ActionName("DeletePage")]
