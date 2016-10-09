@@ -1,16 +1,16 @@
 ﻿@model WebApplication2.Models.Site
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title =@Resources.Resource.Details;
 }
 
 
-<h2>Details</h2>
+<h2>@Resources.Resource.Details</h2>
 
 <div>
     
-     <a href="@Url.Action("LoadPage", "Page", new {userName = Model.Title, id = Model.SiteId})" class="but btn btn-primary">Create page</a>
-     <a href="@Url.Action("CreateMenu", "Menu", new {userName = Model.Title, id = Model.SiteId})" class="but btn btn-primary">Create menu</a>
+     <a href="@Url.Action("LoadPage", "Page", new {userName = Model.Title, id = Model.SiteId})" class="but btn btn-primary">@Resources.Resource.CreatePage</a>
+     <a href="@Url.Action("CreateMenu", "Menu", new {userName = Model.Title, id = Model.SiteId})" class="but btn btn-primary">@Resources.Resource.CreateMenu</a>
  
     <dl class="dl-horizontal">
         <dt>
@@ -49,6 +49,6 @@
 </div>
 
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.SiteId }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink(@Resources.Resource.Edit, "Edit", new { id = Model.SiteId }) |
+    @Html.ActionLink(@Resources.Resource.BackToList, "Index")
 </p>

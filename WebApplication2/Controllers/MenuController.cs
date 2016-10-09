@@ -8,9 +8,11 @@ using System.Web.Mvc;
 using WebApplication2.Models;
 using Microsoft.Ajax.Utilities;
 using Microsoft.AspNet.Identity;
+using WebApplication2.Filters;
 
 namespace WebApplication2.Controllers
 {
+    [Culture]
     public class MenuController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

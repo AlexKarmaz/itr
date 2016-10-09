@@ -3,18 +3,18 @@
 <script src="~/Scripts/siteconstr.js"></script>
 <link href="~/Content/createsite1.css" rel="stylesheet">
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title =  @Resources.Resource.Create;
 }
 
 
 
 
     <div class="form-horizontal">
-        <h4>Site</h4>
+        <h4>@Resources.Resource.Site</h4>
         <hr />
         @Html.ValidationSummary(true)
         <tr>
-            <td><p>Enter the name of the site :</p></td>
+            <td><p>@Resources.Resource.NameSite :</p></td>
         </tr>
         <tr>
             <div class="form-group">
@@ -26,7 +26,7 @@
         </tr>
 
         <tr>
-            <td><p>Description :</p></td>
+            <td><p>@Resources.Resource.Description :</p></td>
         </tr>
 
         <div class="form-group">
@@ -37,7 +37,7 @@
         </div>
 
         <table>
-            <tr><td><p>Choose a theme site :</p></td></tr>
+            <tr><td><p>@Resources.Resource.ThemeSelection :</p></td></tr>
 
             <td>
                <div class="thumb">
@@ -46,7 +46,7 @@
                 </div>
             </td>
 
-        <tr><td><p>Choose a template :</p></td></tr>
+        <tr><td><p>@Resources.Resource.MenuSelection :</p></td></tr>
 
                 <td>
                     <div class="thumbMenu">
@@ -57,14 +57,14 @@
             </table>
                 <div class="form-group" style='position: relative; text-align: left; margin: 0;'>
                     <div class="col-md-offset-2 col-md-10" style='position: relative; text-align: left; margin: 0;'>
-                        <input type="submit" value="Create" id="save" class="btn btn-default" />
+                        <input type="submit" value="@Resources.Resource.Create" id="save" class="btn btn-default" />
                     </div>
                 </div>
         </div>
 
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink(@Resources.Resource.BackToList, "Index")
 </div>
 
 

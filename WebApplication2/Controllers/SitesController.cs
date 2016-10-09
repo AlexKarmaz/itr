@@ -8,9 +8,10 @@ using System.Web.Mvc;
 using WebApplication2.Models;
 using Microsoft.Ajax.Utilities;
 using Microsoft.AspNet.Identity;
-
+using WebApplication2.Filters;
 namespace WebApplication2.Controllers
 {
+    [Culture]
     public class SitesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -149,6 +150,24 @@ namespace WebApplication2.Controllers
           //  }
             return View("Site", page);
       }
+
+        [AllowAnonymous]
+        public ActionResult ChangeCulture(string lang)
+        {
+            List<string> cultures = new List<string>() { "ru", "en" };
+            lang = !cultures.Contains(lang) ? "ru" : lang;
+            HttpCookie cookie = Request.Cookies["lang"];
+            if (cookie != null)
+                cookie.Value = lang;
+            else
+            {
+                cookie = new HttpCookie("lang", lang);
+                cookie.HttpOnly = false;
+                cookie.Expires = DateTime.Now.AddYears(1);
+            }
+            Response.Cookies.Add(cookie);
+            return Redirect(Request.UrlReferrer.AbsolutePath);
+        }
 
         protected override void Dispose(bool disposing)
         {

@@ -9,10 +9,12 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 using WebApplication2.Models;
+using WebApplication2.Filters;
 
 namespace WebApplication2.Controllers
 {
     [Authorize]
+    [Culture]
     public class AccountController : Controller
     {
         public AccountController()

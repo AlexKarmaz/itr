@@ -124,3 +124,7 @@ F:\сайт с авторизацией и регистрацией\WebApplicati
 F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Migrations.updatemenustructure.resources
 F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Migrations.updatemenu2.resources
 F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Migrations.pageupdate.resources
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Resources.Resource.resources
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\bin\en\WebApplication2.resources.dll
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Resources.Resource.en.resources
+F:\сайт с авторизацией и регистрацией\WebApplication2\WebApplication2\obj\Debug\en\WebApplication2.resources.dll

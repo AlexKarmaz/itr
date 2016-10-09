@@ -1,17 +1,16 @@
 ﻿@model WebApplication2.Models.Site
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = @Resources.Resource.Edit;
 }
 
-<h2>Edit</h2>
+<h2>@Resources.Resource.Edit</h2>
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>You can change the site title and description</h4>
         <hr />
         @Html.ValidationSummary(true)
         @Html.HiddenFor(model => model.SiteId)
@@ -45,6 +44,12 @@
     </div>
 }
 
+@Resources.Resource.Editingpages:
+@foreach (var x in Model.Pages)
+{
+    <a href="@Url.Action("Site", "Sites", new {id = Model.SiteId, pageId = @x.PageId })" class="btn btn-primary">@x.PageId</a>
+}
+
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink(@Resources.Resource.BackToList, "Index")
 </div>

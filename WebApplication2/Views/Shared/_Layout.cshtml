@@ -9,6 +9,8 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery-ui")
+    @Scripts.Render("~/bundles/dropzone")
 
 </head>
 <body>
@@ -23,14 +25,26 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Create site", "Create", "Sites")</li>
-                    <li>@Html.ActionLink("My sites", "Index", "Sites")</li>
+                    <li>@Html.ActionLink(@Resources.Resource.Home, "Index", "Home")</li>
+                    <li>@Html.ActionLink(@Resources.Resource.CreateSite, "Create", "Sites")</li>
+                    <li>@Html.ActionLink(@Resources.Resource.MySites, "Index", "Sites")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
+                <div>
+                    @using (Html.BeginForm("ChangeCulture", "Sites"))
+                    {
+                        <select name="lang">
+                            <option disabled selected>@Resources.Resource.ChooseLang</option>
+                            <option value="ru">Русский</option>
+                            <option value="en">English</option>
+                        </select>
+                        <input type="submit" name="submit" value="@Resources.Resource.ChooseLang">
+                    }
+                </div>
             </div>
         </div>
     </div>
+   
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -38,7 +52,6 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-
 
 </body>
 </html>

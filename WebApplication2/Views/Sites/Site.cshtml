@@ -4,12 +4,15 @@
     Layout = null;
     var Menu = Model.Site.Menu;
     var TemplateId = Model.Site.TemplateId;
-    var Author = false;
+    var Flag = false;
 }
-@if (Author != true)
+
+@if (Flag != true)
 {
     @Styles.Render("~/Content/PageLayout");
 }
+
+
 @Scripts.Render("~/bundles/loadTemplate")
 @{ if (TemplateId == 1)
     { @Styles.Render("~/Content/StyleGray")}
@@ -115,6 +118,7 @@
                         </div>
                     </div>
                     <div class="allbut " id="allbutId">
+
                     </div>
                     <div id="dialog" class="dialog" style="display: none">
                         <input type="text" class="mytext" />
@@ -157,8 +161,8 @@
             $(document).ready(function() {
                 LoadMenuEditor();
             });
-
-
         </script>
+
+        @Html.ActionLink(@Resources.Resource.BackToList, "Index")
 </body>
 </html>

@@ -170,7 +170,7 @@ $(document).ready(function() {
             <header id="navtop">
                 <nav class="fright" id="navtop-block">
                     <div class="fright" style="margin: 2em; background: 0;">
-                        <a id="add" class="button">Add</a> | <a id="remove" class="button">Remove</a> | <a id="saveMenu" class="button">SaveMenu</a>
+                        <a id="add" class="button">@Resources.Resource.Add</a> | <a id="remove" class="button">@Resources.Resource.Remove</a> | <a id="saveMenu" class="button">@Resources.Resource.SaveMenu</a>
                     </div>
                     <form id="topBarForm">
                         <div style="display: block; align-content: center; clear: both">
@@ -203,10 +203,10 @@ $(document).ready(function() {
                             </p>
                             <div class="fleft" style="height: 9em; background: 0;">
                                 <p>
-                                    <a id="addSide" class="button">Add</a>
+                                    <a id="addSide" class="button">@Resources.Resource.Add</a>
                                 </p>
-                                <p><a id="removeSide" class="button">Remove</a></p>
-                                <p> <a id="saveMenu" class="button">SaveMenu</a></p>
+                                <p><a id="removeSide" class="button">@Resources.Resource.Remove</a></p>
+                                <p> <a id="saveMenu" class="button">@Resources.Resource.SaveMenu</a></p>
                             </div>
                             <form id="sideBarForm">
                                 <div style="display: block; align-content: center; clear: both">
@@ -232,9 +232,10 @@ $(document).ready(function() {
                     <div class="grid-wrap">
                         <input type="text" style="border: none;" value="@Url.Action("Site", "Sites", new { id = Model.SiteId, pageId = @page.PageId})" />
                         <iframe src="@Url.Action("PageView", "Page", new {id = Model.SiteId, pageId = @page.PageId})"> </iframe>
-
                     </div>
+                    <a href="@Url.Action("Site", "Page", new {id = page.PageId })" class="btn btn-primary">@Resources.Resource.Delete</a>
                 </section>
+
             }
             
 

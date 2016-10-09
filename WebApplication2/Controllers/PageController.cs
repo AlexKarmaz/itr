@@ -8,9 +8,11 @@ using System.Web.Mvc;
 using WebApplication2.Models;
 using Microsoft.Ajax.Utilities;
 using Microsoft.AspNet.Identity;
+using WebApplication2.Filters;
 
 namespace WebApplication2.Controllers
 {
+    [Culture]
     public class PageController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -66,6 +68,32 @@ namespace WebApplication2.Controllers
                 db.Pages.SingleOrDefault(p => p.PageId == savePage.PageId).HtmlCode = savePage.HtmlCode;
                 db.SaveChanges();
             }
+        }
+
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Page page = db.Pages.Find(id);
+            if (page == null)
+            {
+                return HttpNotFound();
+            }
+            return null;
+        }
+
+        [HttpPost, ActionName("DeletePage")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            Page page = db.Pages.Find(id);
+            page.PageId = 0;
+          //  db.Pages.RemoveRange(site.Pages);
+            db.Pages.Remove(page);
+            db.SaveChanges();
+            return null;
         }
     }
 }
